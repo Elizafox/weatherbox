@@ -1,3 +1,5 @@
+Introduction
+============
 This is Weatherbox, the code to my personal weather station.
 
 Everything here is licensed CC0 (public domain). Use it as you wish. Or don't. I'm not your mother.
@@ -5,3 +7,34 @@ Everything here is licensed CC0 (public domain). Use it as you wish. Or don't. I
 My setup uses an ESP32 and an Arduino Nano 33 BLE in communication via I2C (I couldn't get SPI to
 work). This is probably not the most ideal setup, but it's the one I chose, and it works. At some
 future point, I'll probably just migrate over to an Arduino Nano 33 IoT or something.
+
+Requirements
+============
+On the Arduino end:
+* RTCLib
+* mbed OS (built-in on the Nano 33 BLE and probably others, no need to do anything on those)
+* Adafruit_SI1145
+* Adafruit_GPS
+* BSEC
+
+On the ESP32 end:
+* ArduinoJson
+* Board package >= 2.0.0
+
+Hardware used/bill of materials
+===============================
+I used:
+* ESP32-WROOM-32D (web server)
+* Arduino Nano 33 BLE (data gathering)
+* GT-U7 (NEO-3M compatible) (GPS module)
+* SI1145 (UV sensor)
+* BME680 (temp/pressure/air quality)
+* DS1307 (RTC)
+* SparkFun weather vane/anenometer/rain gauge combination (may not be the most robust but it works)
+* A veroboard
+* Jumper wires
+* A ton of patience (self-discipline)
+
+Schematic
+=========
+I have no schematics as of yet, but it should be straightforward to put this together yourself.
