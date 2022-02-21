@@ -1,0 +1,6 @@
+[submodule "weatherbox_esp32"]
+	path = weatherbox_esp32
+	url = https://github.com/Elizafox/weatherbox_esp32.git
+[submodule "weatherbox_arduino"]
+	path = weatherbox_arduino
+	url = https://github.com/Elizafox/weatherbox_arduino.git

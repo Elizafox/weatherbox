@@ -1,0 +1,7 @@
+This is Weatherbox, the code to my personal weather station.
+
+Everything here is licensed CC0 (public domain). Use it as you wish. Or don't. I'm not your mother.
+
+My setup uses an ESP32 and an Arduino Nano 33 BLE in communication via I2C (I couldn't get SPI to
+work). This is probably not the most ideal setup, but it's the one I chose, and it works. At some
+future point, I'll probably just migrate over to an Arduino Nano 33 IoT or something.
